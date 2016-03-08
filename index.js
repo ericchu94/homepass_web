@@ -13,7 +13,7 @@ function getHostapdStatusCli() {
 
 function getHostapdStatusMock() {
   return fs.readFile(hostapdMock).then(data => {
-    return data;
+    return data.toString();
   });
 }
 
