@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ericchu94/homepass_web#readme",
   "dependencies": {
-    "mz": "^2.3.1"
+    "expect.js": "^0.3.1",
+    "mz": "^2.3.1",
+    "sinon": "^1.17.3"
   }
 }
