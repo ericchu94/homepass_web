@@ -35,7 +35,7 @@ function getConnectedClients() {
   });
 }
 
-getHostapdStatus().then(function (data) {
+getConnectedClients().then(function (data) {
   console.log('success:', data);
 }, function (err) {
   console.log('fail:', err);
