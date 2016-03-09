@@ -4,7 +4,7 @@ const execFile = require('mz/child_process').execFile;
 const fs = require('mz/fs');
 
 const hostapdCli = '/usr/bin/hostapd_cli';
-const hostapdCliArgs = ['all_sta'];
+const hostapdCliArgs = ['-p', '/var/run/homepass', 'all_sta'];
 
 function getHostapdStatus() {
   return execFile(hostapdCli, hostapdCliArgs).then(result => {
